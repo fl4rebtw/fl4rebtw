@@ -1,16 +1,28 @@
-## Hi there 👋
+<!DOCTYPE html>
+<html>
 
-<!--
-**fl4rebtw/fl4rebtw** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-Here are some ideas to get you started:
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>TODO App</title>
+</head>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<body>
+  <div class="container">
+    <h1 class="mt-5">My TODO App</h1>
+    <div class="mb-3">
+      <span class="me-3">Item count: <span id="item-count">0</span></span>
+      <span>Unchecked count: <span id="unchecked-count">0</span></span>
+    </div>
+
+    <button class="btn btn-primary mb-3" onClick="newTodo()">New TODO</button>
+
+    <ul id="todo-list" class="list-group">
+    </ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
